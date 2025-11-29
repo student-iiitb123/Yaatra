@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container my-5">
+  <div class="card shadow p-4">
+    <h2 class="text-center text-success mb-4"> Sign Up</h2>
+
+    <form method="POST" action="/signup">
+
+      <!-- Username -->
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input name="username" type="text" class="form-control" placeholder="Choose a cool username " required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input name="email" type="email" class="form-control" placeholder="you@email.com" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input name="password" type="password" class="form-control" placeholder="Create a strong password " required>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg px-5">Create Account</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
